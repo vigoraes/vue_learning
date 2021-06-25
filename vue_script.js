@@ -56,37 +56,31 @@ Vue.component('continente', {
 			
 			template: `
 			<div :id="local" class="continente">
+			<img :src="image" @click='addSoldier' usemap='getMap'>
 			<h1>{{soldiers}}</h1>
-			<img :src="image" @click='addSoldier'>
 			</div>
 			`,
 			
 			data(){
 				return{
-					soldiers: 1	
+					soldiers: 1,
 				}
 			},
 
 			methods: {
 				addSoldier(){
 					this.soldiers += 1
-				},
-
-				isReset(){
-					if(this.reset){
-						this.soldiers == 1
-						this.reset = false
-					} 
-
-
 				}
 			},
 			
 			computed: {
 				image(){
 					return 'images/' + this.local + '/' + this.color + '.png'
-				}
+				},
 
+				getMap(){
+	    			return '#' + continente + '-map'
+	    		}
 
 			}			
 		})
@@ -98,8 +92,7 @@ Vue.component('continente', {
 	  		data: {
 	  			continentes: ['medio-paraiba', 'metropolitana', 'serrana', 'norte', 'noroeste', 'centro-sul', 'lagos'],
 	  			color: ['default','default','default','default','default','default','default'],
-	  			palette: ['blue', 'pink', 'purple', 'green', 'orange', 'red', 'yellow'],
-	  			reset: false
+	  			palette: ['blue', 'pink', 'purple', 'green', 'orange', 'red', 'yellow']
 	    	},
 	    	
 	    	methods: {
@@ -119,6 +112,7 @@ Vue.component('continente', {
 						Vue.set(this.color, i, this.palette[ranNums[i]])	
 					} 
 	    		},
+	    		
 	    		resetColor(){
 	    			for(let i = 0; i < 7; i++) Vue.set(this.color, i, 'default')
 	    			this.reset = true
