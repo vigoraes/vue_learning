@@ -1,39 +1,47 @@
 .medio-paraiba{
+	cursor: pointer;
+	cursor: pointer;
 	position:absolute;
 	top: 437px;
 }
 
 .centro-sul{
+	cursor: pointer;
 	position:absolute;
 	left: 335px;
 	top: 380px;
 }
 
 .metropolitana{
+	cursor: pointer;
 	position:absolute;
 	left: 308px;
 	top: 578px;
 }
 
 .lagos{
+	cursor: pointer;
 	position:absolute;
 	left: 590px;
 	top: 540px;
 }
 
 .serrana{
+	cursor: pointer;
 	position:absolute;
 	left: 475px;
 	top: 323px;
 }
 
 .norte{
+	cursor: pointer;
 	position:absolute;
 	left: 825px;
 	top: 153px;
 }
 
 .noroeste{
+	cursor: pointer;
 	position:absolute;
 	left: 788px;
 }
