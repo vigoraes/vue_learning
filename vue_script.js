@@ -1,3 +1,40 @@
+Vue.component('navbar',{
+	template: `
+	<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="50" height="50" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">nothing yet<span class="sr-only">(Página atual)</span></a>
+      <a class="nav-item nav-link" href="#">nothing yet</a>
+      <a class="nav-item nav-link" href="#">nothing yet</a>
+      <a class="nav-item nav-link disabled" href="#">nothing yet</a>
+    </div>
+  </div>
+</nav>
+	`,
+	data(){
+		return{
+			tmp: 'tmp'
+		}
+	}
+})
+
+Vue.component('rodape',{
+	template: `
+	<div><p>{{user}} study &copy-2020</p></div>
+	`,
+	data(){
+		return{
+			user: 'Johnzin'
+		}
+	}
+})
+
 Vue.component('continente', {
 			props: {
 				local: {
