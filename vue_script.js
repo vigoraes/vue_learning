@@ -63,25 +63,21 @@ Vue.component('continente', {
 			
 			data(){
 				return{
-					soldiers: 1,
+					soldiers: 1
 				}
 			},
 
 			methods: {
 				addSoldier(){
 					this.soldiers += 1
+					this.$emit('update-soldiers', this.index)
 				}
 			},
 			
 			computed: {
 				image(){
 					return 'images/' + this.local + '/' + this.color + '.png'
-				},
-
-				getMap(){
-	    			return '#' + continente + '-map'
-	    		}
-
+				}
 			}			
 		})
 
@@ -92,7 +88,8 @@ Vue.component('continente', {
 	  		data: {
 	  			continentes: ['medio-paraiba', 'metropolitana', 'serrana', 'norte', 'noroeste', 'centro-sul', 'lagos'],
 	  			color: ['default','default','default','default','default','default','default'],
-	  			palette: ['blue', 'pink', 'purple', 'green', 'orange', 'red', 'yellow']
+	  			palette: ['blue', 'pink', 'purple', 'green', 'orange', 'red', 'yellow'],
+	  			soldiers: [1,1,1,1,1,1,1]
 	    	},
 	    	
 	    	methods: {
@@ -115,7 +112,10 @@ Vue.component('continente', {
 	    		
 	    		resetColor(){
 	    			for(let i = 0; i < 7; i++) Vue.set(this.color, i, 'default')
-	    			this.reset = true
+	    		},
+
+	    		updateSoldiers(index){
+	    			Vue.set(this.soldiers, index, this.soldiers[index] + 1)
 	    		}
 	    	}
 		})
