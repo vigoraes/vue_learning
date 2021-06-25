@@ -56,7 +56,7 @@ Vue.component('continente', {
 			
 			template: `
 			<div :id="local" class="continente">
-			<img :src="image" @click='addSoldier' usemap='getMap'>
+			<img :src="image" @click='addSoldier'>
 			<h1>{{soldiers}}</h1>
 			</div>
 			`,
