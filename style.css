@@ -1,12 +1,12 @@
 body{
 	background: url('images/background.jpg');
-	
+
 }
 
 
 #map{
 	position: relative;
-	left: 180px;
+	left: 100px;
 }
 
 #bottons{
