@@ -1,94 +1,95 @@
-.medio-paraiba{
+.continente{
 	cursor: pointer;
-	cursor: pointer;
+
+}
+
+.continente :hover{
+	opacity: 0.8;
+}
+
+#medio-paraiba{
 	position:absolute;
 	top: 437px;
 }
 
-.centro-sul{
-	cursor: pointer;
+#centro-sul{
 	position:absolute;
 	left: 335px;
 	top: 380px;
 }
 
-.metropolitana{
-	cursor: pointer;
+#metropolitana{
 	position:absolute;
 	left: 308px;
 	top: 578px;
 }
 
-.lagos{
-	cursor: pointer;
+#lagos{
 	position:absolute;
 	left: 590px;
 	top: 540px;
 }
 
-.serrana{
-	cursor: pointer;
+#serrana{
 	position:absolute;
 	left: 475px;
 	top: 323px;
 }
 
-.norte{
-	cursor: pointer;
+#norte{
 	position:absolute;
 	left: 825px;
 	top: 153px;
 }
 
-.noroeste{
-	cursor: pointer;
+#noroeste{
 	position:absolute;
 	left: 788px;
 }
 
-.medio-paraiba h1{
+#medio-paraiba h1{
 	position: relative;
 	left: 200px;
 	top: 200px;
 }
 
-.centro-sul h1{
+#centro-sul h1{
 	position: relative;
 	left: 80px;
 	top: 200px;
 }
 
-.metropolitana h1{
+#metropolitana h1{
 	position: relative;
 	left: 130px;
 	top: 180px;
 }
 
-.serrana h1{
+#serrana h1{
 	position: relative;
 	left: 270px;
 	top: 150px;
 }
 
-.norte h1{
+#norte h1{
 	position: relative;
 	left: 250px;
 	top: 250px;
 }
 
-.noroeste h1{
+#noroeste h1{
 	position: relative;
 	left: 120px;
 	top: 200px;
 }
 
-.medio-paraiba h1{
+#medio-paraiba h1{
 	position: relative;
 	left: 150px;
 	top: 150px;
 }
 
-.lagos h1{
+#lagos h1{
 	position: relative;
 	left: 200px;
 	top: 170px;
