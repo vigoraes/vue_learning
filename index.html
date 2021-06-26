@@ -10,10 +10,10 @@
 
 <body>
 	<div id="app">
-		<navbar style='position: fixed; width: 100%;'> </navbar>
 		<div id="map" v-for="continente, index in continentes">
 			<continente :index='index' :local='continente' :color='color[index]' @update-soldiers='updateSoldiers'> </continente>
 		</div>
+		<navbar style='position: fixed; width: 100%; height: 7%;'> </navbar>
 		<div id='bottons'>
 			<button type="button" class="btn btn-secondary btn-lg" @click="updateColor('blue')">Start</button>
 			<button type="button" class="btn btn-secondary btn-lg" @click="resetColor">Reset</button>
